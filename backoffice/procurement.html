@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement | Back Office - CampusCart Express</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background: #f1f5f9; }
+        .admin-header {
+            background: #0f172a;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        .admin-nav a:hover { color: white; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="admin-header">
+        <div style="font-weight: 700; font-size: 1.3rem;">CampusCart Back Office</div>
+        <div class="admin-nav">
+            <a href="procurement.html">Procurement</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="../index.html">← Back to Store</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Procurement (B2B Suppliers)</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #64748b;">
+            Manage suppliers and purchase orders for textbooks, stationery, and dorm products.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Supplier</th>
+                    <th>Category</th>
+                    <th>Last Order</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kenya Book Distributors</td>
+                    <td>Textbooks</td>
+                    <td>03 Nov 2026</td>
+                    <td style="color: #10b981; font-weight: 600;">Active</td>
+                    <td><button class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;">Reorder</button></td>
+                </tr>
+                <tr>
+                    <td>Stationery Hub Ltd</td>
+                    <td>Stationery</td>
+                    <td>28 Oct 2026</td>
+                    <td style="color: #10b981; font-weight: 600;">Active</td>
+                    <td><button class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;">Reorder</button></td>
+                </tr>
+                <tr>
+                    <td>Dorm Essentials Co.</td>
+                    <td>Bedding & Kitchen</td>
+                    <td>15 Oct 2026</td>
+                    <td style="color: #f59e0b; font-weight: 600;">Pending</td>
+                    <td><button class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;">Follow Up</button></td>
+                </tr>
+                <tr>
+                    <td>Tech Accessories Kenya</td>
+                    <td>Gadgets</td>
+                    <td>01 Nov 2026</td>
+                    <td style="color: #10b981; font-weight: 600;">Active</td>
+                    <td><button class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;">Reorder</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

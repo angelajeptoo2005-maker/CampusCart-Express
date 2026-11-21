@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics | Back Office - CampusCart Express</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background: #f1f5f9; }
+        .admin-header {
+            background: #0f172a;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        .admin-nav a:hover { color: white; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .stat-card {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .stat-card h3 {
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 0.4rem;
+        }
+        .stat-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="admin-header">
+        <div style="font-weight: 700; font-size: 1.3rem;">CampusCart Back Office</div>
+        <div class="admin-nav">
+            <a href="procurement.html">Procurement</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="../index.html">← Back to Store</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">E-Commerce Analytics Dashboard</h2>
+        <p style="text-align: center; margin-bottom: 2.5rem; color: #64748b;">
+            Overview of website performance and sales (prototype data).
+        </p>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>1,248</h3>
+                <p>Total Visitors (This Month)</p>
+            </div>
+            <div class="stat-card">
+                <h3>186</h3>
+                <p>Orders Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3>KES 412,500</h3>
+                <p>Revenue</p>
+            </div>
+            <div class="stat-card">
+                <h3>14.9%</h3>
+                <p>Conversion Rate</p>
+            </div>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <h3 style="margin-bottom: 1.2rem; color: #1e3a8a;">Top Selling Products</h3>
+            <ul style="line-height: 2; color: #334155;">
+                <li>Wireless Earbuds — 48 units</li>
+                <li>Introduction to Algorithms (Textbook) — 37 units</li>
+                <li>Premium Notebook Pack — 29 units</li>
+                <li>Study Desk Lamp — 22 units</li>
+                <li>Dorm Bed Sheet Set — 18 units</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
